@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'SFMono';
+    src: url('/assets/SFMono-Regular.otf') format('otf');
+}
+
+body {
+    color: white;
+    background-color: #000;
+}
+
+#boot_ls {
+    white-space: pre-line;
+    overflow-y: auto;
+}
+
+#start_icon_flash {
+    font-family: "SFMono", monospace;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.button_menu {
+    font-family: SFMono, monospace;
+    font-size: 16px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.boot_menu {
+    font-family: SFMono, monospace;
+    background-color: black;
+    color: white;
+}
+
+.main_content {
+    color: #232C33;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: rgba(218, 223, 247, 0.45);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.37);
+}
+
+.boot_button {
+    font-family: 'SFMono', monospace;
+    background-color: blue;
+    border: none;
+    outline: none;
+    cursor: wait;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+}
+
+.icon-bar {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(76, 118, 220, 0.58);
+    padding: 10px;
+}
+
+.icon-bar a {
+    color: white;
+    display: flex;
+    width: fit-content;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.2s ease-in-out;
+    font-size: 24px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.33);
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.icon-bar a:hover {
+    background-color: rgba(9, 20, 89, 0.59);
+    box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.43);
+    font-size: 20px;
+}
+
+.active {
+    color: white;
+    background-color: rgb(8, 105, 230);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.33);
+    font-size: 25px;
+}
+
+.credits {
+    text-align: center;
+    move-to: bottoms;
+    font-family: "SFMono", monospace;
+    font-weight: 400;
+}
+
+.credits a {color: #77216f}
+
+.main_headline {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.quote {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SFMono', monospace;
+}
+
+.header {
+    background-color: #b7c7ef;
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.12);
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.post {
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(218, 223, 247, 0.62);
+}
