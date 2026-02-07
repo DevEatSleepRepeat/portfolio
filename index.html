@@ -1,75 +1,116 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sam</title>
-    <link rel="stylesheet" href="./maincharacter.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body id="body">
-    <script src="./interworkings.js"></script>
-    <div class="button_menu" id="boot_menu">
-        <p>HTML5 Bootloader</p>
-        <p>=====================<br>
-            | /hdd1 Windows10&nbsp&nbsp&nbsp&nbsp|<br>
-            | /hdd2 ArchLinux&nbsp&nbsp&nbsp&nbsp|<br>
-            <button class="boot_button" id="boot_button" onclick="show()">| /sdb USB_PORTFOLIO |</button><br>
-            =====================
-        </p>
-    </div>
-    <div class="boot_menu" id="boot_elements">
-        <p id="boot_note_1"></p>
-        <p id="boot_note_2"></p>
-        <p id="boot_ls"></p>
-    </div>
-    <div id="start_icon_flash" hidden="until-found">
-        <p>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspaM#*########################***&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
-            &nbsp&nbsp&nbsp&nbsp&nbspM#*o*MBWBBBBBBBBBBBBWad#WBBBBBWBWWoddha&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
-            &nbsp&nbsp&nbspMM#WBW&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWBM#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspB$Wkd*&nbsp&nbsp&nbsp&nbsp<br>
-            &nbsp&nbspMW#M&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWW*#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspW$#h#&nbsp&nbsp&nbsp<br>
-            &nbsp&nbspWM*#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWW*#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWB**&nbsp&nbsp&nbsp<br>
-            &nbsp&nbspWMaM&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWWo#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMB##&nbsp&nbsp&nbsp<br>
-            &nbsp&nbspMBaa#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWWo#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBWMM&nbsp&nbsp&nbsp<br>
-            &nbsp&nbsp&nbspMBWZbo&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWMa#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWMMWW&nbsp&nbsp&nbsp&nbsp<br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspBBWahhdbo*#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWBmwpbkkkkhao*#owoW&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp#W$@WkQao&nbsp&nbsp&nbsp&nbsp&nbspWBWWMMMMMMMMMW$@$aa#&nbsp&nbsp&nbsp&nbsp&nbsp<br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspW$BhpaM&nbsp&nbspBW**&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp$Bkda&nbsp&nbsp&nbsp<br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspM@aa&nbsp&nbsp$W**&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspW*ho&nbsp&nbsp<br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWB*#&nbsp@Wo#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp@Ba#&nbsp&nbsp<br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspW#W&nbsp@W*#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWB*#&nbsp&nbsp<br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*WMM&nbsp@W*#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp$W#M&nbsp&nbsp<br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMW#W&nbsp&nbsp$Wo#&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBWMM&nbsp&nbsp&nbsp<br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp#MM*OWB&nbsp&nbsp$Mh*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMMMMMWM&nbsp&nbsp&nbsp<br>
-            &nbsp&nbspWMahkkkkkkha*MMWWWMapboWMapdbkkkkkkhao#WWWB&nbsp&nbsp&nbsp&nbsp&nbsp<br>
-            &nbsp&nbsp&nbspBBBBBBWWWWWBWMMMMWWWBWWMWMWWWBBBBWWBM&nbsp
-        </p>
-    </div>
-    <div class="main_content" id="main_content" hidden="until-found">
-        <div class="header">
-            &nbsp<div class="circle" style="background-color: #fa4b4b"></div>&nbsp
-            <div class="circle" style="background-color: #ffd549"></div>&nbsp
-            <div class="circle" style="background-color: #7af362"></div>
-        </div>
-        <h1 class="main_headline" id="main_headline">Sam's Portfolio</h1>
-        <div class="post">
-            <h2>Weighted Choices</h2>
-            <h4>Sep 12, 2025</h4>
-            <p>I have finished the</p>
-        </div>
-        <div class="icon-bar">
-            <label></label>
-            <a href="https://github.com/DevEatSleepRepeat/Apple-ProRes-Encoder">APFS</a><p>&nbsp&nbsp&nbsp</p><!-- make apfs github-->
-            <a href="#">RTFP</a><p>&nbsp&nbsp&nbsp</p><!-- make rftp github-->
-            <a class="active" href="#">H<i class="fa fa-home"></i>ME</a><p>&nbsp&nbsp&nbsp</p>
-            <a href="https://github.com/DevEatSleepRepeat/WeightedChoices">WCSC</a><p>&nbsp&nbsp&nbsp</p>
-            <a href="#">NULL</a>
-            <label></label>
-        </div>
-<!--        <h3 class="quote">Thanks to everyone who got me here</h3>-->
+<!doctype html>
+<html class="no-js" lang="">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sam Bullock</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fff6f2">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top_nav">
+      <p>Sam Bullock</p>
+      <a style="align-content: end;" href="contact.html">Contact Me!</a>
     </div>
+  </div>
+  <div class="super_text_container">
+    <div class="blur_container"><div class="blur_block"></div></div>
+    <p class="super_text">I engineer <i>systems</i>, <i>solutions</i>, and <i>code</i><br> that makes work <i>efficient</i>.</p>
+  </div>
+
+  <br><br>
+  <div class="skills_container">
+    <img src="/img/logo/optimized/python.webp" alt="python icon" width="50px" height="50px">
+    <img src="/img/logo/optimized/html.webp" alt="python icon" width="50px" height="50px">
+    <img src="/img/logo/optimized/typescript.webp" alt="typecript icon" width="50px" height="50px">
+    <img src="/img/logo/optimized/linux.webp" alt="linux icon" width="50px" height="50px">
+    <img src="/img/logo/optimized/bash.webp" alt="bash icon" width="50px" height="50px">
+
+  </div>
+  <div class="container" id="container_p" style="width: 90%;">
+    <h1>Projects</h1>
+    <div class="container" style="width: 90%;">
+      <div class="img_headline">
+        <h2>Weighted Choices &nbsp</h2>
+        <a href="https://github.com/DevEatSleepRepeat/WeightedChoices">
+          <img src="/img/logo/github.png" alt="github icon" width="30px" height="30px">
+        </a>
+      </div>
+      <p>Weighted choices is a experiment with a better method of classifying and ranking objects. Instead of a bracket or 1v1 method, weighted choices compares all possible combinations without comparing duplicates.</p>
+      <div class="code_container">
+        <code>
+          |=Rank-Item-Weight========================|<br>
+          | 1 Pancakes 0.4                          <br>
+          |=========================================|<br>
+          | 2 Bacon 0.4                             <br>
+          |=========================================|<br>
+          | 3 Eggs 0.0                              <br>
+          |=========================================|<br>
+          | 4 Grits 0.0                             <br>
+          |=========================================|<br>
+          | 5 Waffles -0.2                          <br>
+          |=========================================|<br>
+          | 6 Bagels 0.0                            <br>
+          |=========================================|<br>
+          | 7 Sausage -0.6                          <br>
+          |=========================================|<br>
+        </code>
+      </div>
+    </div>
+
+    <br>
+    <div class="container" style="width: 90%;">
+      <div class="img_headline">
+        <h2>LCat &nbsp</h2>
+        <a href="https://github.com/DevEatSleepRepeat/lcat">
+          <img src="/img/logo/github.png" alt="github icon" width="30px" height="30px">
+        </a>
+      </div>
+      <p>LCat, also know as listed cat is a simple, python based copy of the common unix command line tool cat with line numbers!</p>
+      <div class="code_container">
+        <code>
+          0 a = 1<br>
+          1 b = 2<br>
+          2<br>
+          3 sum = b + a<br>
+          4<br>
+          5 print(sum)
+        </code>
+      </div>
+    </div>
+
+    <br><div class="container" style="width: 90%;">
+    <div class="img_headline">
+      <h2>PiStation &nbsp</h2>
+      <a href="https://github.com/DevEatSleepRepeat/PiStation">
+        <img src="/img/logo/github.png" alt="github icon" width="30px" height="30px">
+      </a>
+    </div>
+    <p>The PiStation is a Raspberry Pi based console built upon the Ubuntu operating system, All games are written and designed by <a href="https://github.com/Studio-Aperture">Aperture Studios</a>. </p>
+    <div style="align-content: center;">
+      <img src="img/screen/pistation_loader.jpg" width = "300px">
+    </div>
+  </div>
+  </div>
+  <br><br>
+
+  <div class="footer">
+    <img src="/img/icon/Developed-By-a-Human-Not-By-AI-Badge-white@2x.png" alt="Developed By a Human Not By AI Badge">
+    <h3>Made with ❤️ by Sam Bullock</h3>
+  </div>
 </body>
+
 </html>

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7252803-8938-42a4-8437-1ebbb43658e3" name="Changes" comment="" />
+    <list default="true" id="08ab97ab-37d5-4cf8-b651-523c6380a34b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,19 +13,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/interworkings.js" root0="SKIP_INSPECTION" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
+  &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="30ufqmwonsOdGViRzJuluBu1hDt" />
+  <component name="ProjectId" id="37j2YsCDoicpT7F8WeURb8YaqcN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,42 +30,57 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Node.js.interworkings.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/samuel/WebstormProjects/display_portfolio/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fonts" />
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-WS-252.25557.126" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28238.10" />
       </set>
     </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b7252803-8938-42a4-8437-1ebbb43658e3" name="Changes" comment="" />
-      <created>1754482572045</created>
+      <changelist id="08ab97ab-37d5-4cf8-b651-523c6380a34b" name="Changes" comment="" />
+      <created>1767402210849</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1754482572045</updated>
-      <workItem from="1754482573521" duration="20000" />
-      <workItem from="1754482624261" duration="28132000" />
-      <workItem from="1754658966657" duration="2888000" />
-      <workItem from="1754762156924" duration="912000" />
-      <workItem from="1755387830607" duration="184000" />
-      <workItem from="1755466806786" duration="1802000" />
-      <workItem from="1755481937070" duration="2553000" />
-      <workItem from="1755689566847" duration="2095000" />
-      <workItem from="1756571901828" duration="1228000" />
-      <workItem from="1757730164030" duration="3078000" />
-      <workItem from="1757766046560" duration="4938000" />
+      <updated>1767402210849</updated>
+      <workItem from="1767402212421" duration="860000" />
+      <workItem from="1767465032171" duration="6753000" />
+      <workItem from="1767576570137" duration="4303000" />
+      <workItem from="1767666863648" duration="603000" />
+      <workItem from="1767928166762" duration="208000" />
+      <workItem from="1768091478743" duration="10237000" />
+      <workItem from="1768532995219" duration="646000" />
+      <workItem from="1768870784384" duration="4905000" />
+      <workItem from="1769046107433" duration="2643000" />
+      <workItem from="1769715079795" duration="2383000" />
+      <workItem from="1769743672237" duration="1221000" />
+      <workItem from="1769912894917" duration="894000" />
+      <workItem from="1769995500496" duration="4840000" />
+      <workItem from="1770241090452" duration="5305000" />
+      <workItem from="1770387151674" duration="5999000" />
+      <workItem from="1770469741131" duration="6547000" />
     </task>
     <servers />
   </component>
