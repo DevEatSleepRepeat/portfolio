@@ -30,18 +30,68 @@
     <div class="blur_container"><div class="blur_block"></div></div>
     <p class="super_text">I engineer <i>systems</i>, <i>solutions</i>, and <i>code</i><br> that makes work <i>efficient</i>.</p>
   </div>
-
   <br><br>
   <div class="skills_container">
     <img src="/img/logo/optimized/python.webp" alt="python icon" width="50px" height="50px">
     <img src="/img/logo/optimized/html.webp" alt="python icon" width="50px" height="50px">
-    <img src="/img/logo/optimized/typescript.webp" alt="typecript icon" width="50px" height="50px">
+    <img src="/img/logo/optimized/typescript.webp" alt="typescript icon" width="50px" height="50px">
     <img src="/img/logo/optimized/linux.webp" alt="linux icon" width="50px" height="50px">
     <img src="/img/logo/optimized/bash.webp" alt="bash icon" width="50px" height="50px">
-
   </div>
   <div class="container" id="container_p" style="width: 90%;">
     <h1>Projects</h1>
+    <div class="container" style="width: 90%;">
+      <div class="img_headline">
+        <h2>PaperMC Minecraft Server &nbsp</h2>
+        <a href="https://hub.docker.com/r/deveatsleeprepeat/papermcserver">
+          <img src="/img/logo/docker.png" alt="docker icon" width="41.46596856px" height="30px">
+        </a>
+      </div>
+      <h3>About as simple and easy to manage of a Minecraft server I could come up with, just pull and run the container, then plug the IP address into Minecraft and play! All of the setup is done in the background when you first start the container. The image is based off of<code style="font-size: 16px;">alpine/java:22-jdk</code>so its super lightweight and fast.</h3>
+    </div>
+    <br>
+    <div class="container" style="width: 90%;">
+      <div class="img_headline">
+        <h2>Tailscale + PiHole Global Add Blocking &nbsp</h2>
+      </div>
+      <h3>I setup  a local docker instance of the popular PiHole DNS ad blocker tied to my Tailscale VPN so that me and all my devices are protested an manged on the internet.</h3>
+      <a href="https://pi-hole.net/">PiHole Homepage</a><br>
+      <a href="https://tailscale.com/">Tailscale Homepage</a>
+    </div>
+    <br>
+    <div class="container" style="width: 90%;">
+        <div class="img_headline">
+          <h2>Temporary Docker Container &nbsp</h2>
+        </div>
+        <code>
+          docker run -it --network=host --rm debian:stable-slim bash<br>
+        </code>
+        <h3>This command runs the latest, stable, slim image of debian connected to the host's network in a interactive bash terminal. So that one can test or work with a temporary environment.</h3>
+        <br>
+        <h4>Flag Breakdown</h4>
+        <p><strong>-i</strong> Specifies that the container should be run in interactive mode, so one can work inside of it.</p>
+        <p><strong>-t</strong> Tells docker to connect the container to our terminal via TTY.</p>
+        <p><strong>--network=host</strong> Connects the container to the hosts network with the docker proxy.</p>
+        <p><strong>--rm</strong> Removes the container after it is done running, effectively making it temporary.</p>
+        <p><strong>debian:stable-slim</strong> This is the image we want to start with, in our case it is a slim version of debian.</p>
+        <p><strong>bash</strong> Is the command or program we want to start from, in this case, the bash shell.</p>
+        <br>
+    </div>
+    <br>
+    <div class="container" style="width: 90%;">
+      <div class="img_headline">
+        <h2>Tab Countdown Timer &nbsp</h2>
+        <a href="countdown.html">
+          <img src="/img/logo/github.png" alt="github icon" width="30px" height="30px">
+        </a>
+        </div>
+      <p>At its core, this is just a countdown clock, but instead of big numbers inside the windows, it shows them in the tab title. This idea came around while I was doing schoolwork and wanted a way to manage my time, but with out the inconvenience of a physical timer or application I had to switch back and forth from.</p>
+      <div style="display: flex; align-items: center;">
+        <img src="img/screen/tab_countdown.png" width="219px" height="26.5px">
+        <p>&nbsp;&nbsp;<-- Super Nifty</p>
+      </div>
+    </div>
+    <br>
     <div class="container" style="width: 90%;">
       <div class="img_headline">
         <h2>Weighted Choices &nbsp</h2>
@@ -99,7 +149,7 @@
         <img src="/img/logo/github.png" alt="github icon" width="30px" height="30px">
       </a>
     </div>
-    <p>The PiStation is a Raspberry Pi based console built upon the Ubuntu operating system, All games are written and designed by <a href="https://github.com/Studio-Aperture">Aperture Studios</a>. </p>
+    <p>The PiStation is a Raspberry Pi based console built upon the Ubuntu operating system, All games are written and designed by <a href="https://github.com/Studio-Aperture">Aperture Studios</a>. The originally started as a school economics project where we created Aperture Studios. This soon branched into a full fled console interface and operating system!</p>
     <div style="align-content: center;">
       <img src="img/screen/pistation_loader.jpg" width = "300px">
     </div>

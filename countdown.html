@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown Timer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; }
+        input { width: 4rem; margin: 0.2rem; }
+        button { margin: 0.5rem; padding: 0.5rem 1rem; }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fff6f2">
+</head>
+<body>
+    <h2>Countdown Timer</h2>
+    <label>Hours: <input type="number" id="hours" min="0" value="0"></label>
+    <label>Minutes: <input type="number" id="minutes" min="0" max="59" value="0"></label>
+    <label>Seconds: <input type="number" id="seconds" min="0" max="59" value="0"></label><br>
+    <button id="startStopBtn">Start</button>
+    <button id="resetBtn">Reset</button>
+
+    <script>
+        let intervalId = null;
+        let remainingSeconds = 0;
+
+        function updateTitle() {
+            const h = String(Math.floor(remainingSeconds / 3600)).padStart(2, '0');
+            const m = String(Math.floor((remainingSeconds % 3600) / 60)).padStart(2, '0');
+            const s = String(remainingSeconds % 60).padStart(2, '0');
+            document.title = `${h}:${m}:${s}`;
+        }
+
+        function startStop() {
+            const startStopBtn = document.getElementById('startStopBtn');
+            if (intervalId === null) {
+                // Start
+                const hrs = parseInt(document.getElementById('hours').value) || 0;
+                const mins = parseInt(document.getElementById('minutes').value) || 0;
+                const secs = parseInt(document.getElementById('seconds').value) || 0;
+                remainingSeconds = hrs * 3600 + mins * 60 + secs;
+                if (remainingSeconds <= 0) {
+                    alert('Please set a positive time.');
+                    return;
+                }
+                updateTitle();
+                intervalId = setInterval(() => {
+                    if (remainingSeconds <= 0) {
+                        clearInterval(intervalId);
+                        intervalId = null;
+                        startStopBtn.textContent = 'Start';
+                        document.title = 'Countdown Timer';
+                        alert('Time up!');
+                        return;
+                    }
+                    remainingSeconds--;
+                    updateTitle();
+                }, 1000);
+                startStopBtn.textContent = 'Stop';
+            } else {
+                // Stop
+                clearInterval(intervalId);
+                intervalId = null;
+                startStopBtn.textContent = 'Start';
+            }
+        }
+
+        function reset() {
+            clearInterval(intervalId);
+            intervalId = null;
+            document.getElementById('startStopBtn').textContent = 'Start';
+            document.getElementById('hours').value = '0';
+            document.getElementById('minutes').value = '0';
+            document.getElementById('seconds').value = '0';
+            remainingSeconds = 0;
+            document.title = 'Countdown Timer';
+        }
+
+        document.getElementById('startStopBtn').addEventListener('click', startStop);
+        document.getElementById('resetBtn').addEventListener('click', reset);
+    </script>
+     <div class="wrapper">
+        <div style="display: flex; text-align: center; justify-content: center; align-items: center;">
+            <p>Sam Bullock&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <a href="/">Return to samis.online</a>
+        </div>
+    </div>
+</body>
+</html>
